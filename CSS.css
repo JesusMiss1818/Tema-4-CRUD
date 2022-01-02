@@ -1,0 +1,86 @@
+body{
+    background-image: url('imagengenial.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+table{
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(197, 26, 26);
+    color: rgb(233, 211, 12);
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+    color: rgb(224, 240, 6);
+}
+
+td{
+    border: 1px solid rgb(235, 212, 4);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: rgb(219, 43, 43);
+}
+
+input[type="text"],input[type="number"]{
+    width:91%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(174, 236, 2);
+    border-radius: 4px;
+    background: rgb(168, 14, 14);
+    color: rgb(236, 232, 5);
+}
+
+input[type="submit"],input[type="reset"]{
+    background: rgb(3, 170, 236);
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: #f00606;
+    color: rgb(224, 240, 6);
+}
+
+input[type="reset"]:hover{
+    background: #f00606;
+    color: rgb(224, 240, 6);
+}
+
+button{
+    background: rgb(3, 163, 238);
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background:#ec0606 ;
+    color: rgb(224, 240, 6);
+}
+
+.validate{
+    margin-left: 5px;
+}
+.hide{
+    display: none;
+}

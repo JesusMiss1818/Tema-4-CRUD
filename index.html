@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud sin localstorage</title>
+    <link type="text/css" rel="stylesheet" href="CSS.css"
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="codigoproducto">Código del producto</label>
+                        <input type="text" name="codigoproducto" id="codigoproducto">
+                    </div>
+                    <div>
+                        <label for="producto">Nombre del producto</label><label class="validate hide" id="productovalidacion">Este campo es necesario</label>
+                        <input type="text" name="producto" id="producto">
+                    </div>
+                    <div>
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                    </div>
+                    <div>
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" id="precio">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Guardar">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="ListaProducto">
+                        <thead>
+                            <tr>
+                                <th>Código del producto</th>
+                                <th>Nombre del producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./javascript.js"></script>
+</body>
+</html>
